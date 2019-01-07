@@ -29,7 +29,7 @@ body{
   left: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -40,19 +40,16 @@ body{
 
 .v-overlay{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background: #225470;
   z-index: 1;
   opacity: 0.75;
+  margin-top: 75px;
 }
 
-.v-text{
-  z-index: 2;
-  color: #ffffff;
-}
 
 header video{
   width: 100vw;
