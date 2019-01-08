@@ -9,7 +9,9 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Nav />
+        <Nav
+          logoTitle="MD "
+        />
         <header className="v-header container">
           <div className="v-fullSreen">
             <video className="video-container video-container-overlay" autoPlay={true} loop muted={true}>
