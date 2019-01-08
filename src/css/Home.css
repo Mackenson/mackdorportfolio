@@ -49,7 +49,10 @@ body{
   opacity: 0.75;
   margin-top: 75px;
 }
-
+.v-text{
+  z-index: 2;
+  text-align: center;
+}
 
 header video{
   width: 100vw;
