@@ -11,7 +11,7 @@ class Nav extends Component {
     return (
       <div>
         <nav>
-          <h1 className="logo">{this.props.logoTitle}</h1>
+          <h1 className="logo">MD</h1>
           <ul>
             {list}
           </ul>
