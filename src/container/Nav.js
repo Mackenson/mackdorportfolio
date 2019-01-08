@@ -2,19 +2,20 @@ import React, { Component } from 'react';
 import '../css/Nav.css';
 class Nav extends Component {
   render() {
+    const navList = ["Home", "About", "Projects", "Contact"];
+    const list = navList.map((item)=>{
+      return(
+        <li><a href={"#" + item}>{item}</a></li>
+      );
+    })
     return (
       <div>
-        <header>
-          <nav>
-            <h1 className="logo">Welcome to Mackenson Dorancy Profolio</h1>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-          </nav>
-        </header>
+        <nav>
+          <h1 className="logo">{this.props.logoTitle}</h1>
+          <ul>
+            {list}
+          </ul>
+        </nav>
       </div>
     );
   }
