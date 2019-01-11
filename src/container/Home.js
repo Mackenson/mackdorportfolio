@@ -5,6 +5,7 @@ import video from "../video/video.mp4"
 import '../css/Home.css';
 import Nav from "./Nav";
 import Header from "./Header";
+import Contact from "./Contact";
 
 class Home extends Component {
   render() {
@@ -27,6 +28,7 @@ class Home extends Component {
             />
           </div>
       </header>
+      <Contact />
       </div>
     );
   }
