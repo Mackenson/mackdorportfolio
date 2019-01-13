@@ -1,16 +1,15 @@
 import React from 'react';
-import '../css/Name.css';
+import '../css/Input.css';
 const Name = (props) => {
   return (
-    <div className="name_field">
-      <label>
-        {props.label}
-      </label>
-        <input
+    <div>
+      <input
+          className="form_field"
+          placeholder={props.label}
           name={props.name}
           type='text'
           value={props.name}
-          onChange={props.handleNmae}
+          onChange={props.handleName}
         />
     </div>
   )

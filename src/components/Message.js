@@ -1,12 +1,11 @@
 import React from 'react';
-
+import '../css/Input.css';
 const Message = (props) => {
   return (
-    <div className="form_field">
-      <label>
-        {props.label}
-      </label>
+    <div>
         <textarea
+          className="message_field"
+          placeholder={props.label}
           name={props.message}
           type='text'
           value={props.message}
