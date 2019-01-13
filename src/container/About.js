@@ -18,6 +18,10 @@ class About extends Component {
             </p>
           </div>
 
+          <button>
+            <a className='resume' align='right' href='../pdf/ Dorancy_Resume.pdf' target='_blank'>resume</a>
+          </button>
+
         </header>
       </div>
     );

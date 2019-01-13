@@ -1,5 +1,6 @@
 nav{
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   z-index: 4;
   height: 8vh;
@@ -7,6 +8,9 @@ nav{
   background-color: #add8e6;
   align-items: center;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul{
