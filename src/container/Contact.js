@@ -26,7 +26,7 @@ class Contact extends Component {
 
   handleEmail(event) {
     let newEmail = event.target.value
-      this.setState({ Email: newEmail })
+      this.setState({ email: newEmail })
   }
 
   handleMessage(event) {
@@ -47,24 +47,34 @@ class Contact extends Component {
 
   render() {
     return(
-      <form className="contact-form" onSubmit={this.handleFormSubmit}>
-        <Name
-          label="Name"
-          name={this.state.name}
-          handleName={this.handleName}
-        />
-        <Email
-          label="Email"
-          email={this.state.email}
-          handleEmail={this.handleEmail}
-        />
-        <Message
-          label="Message"
-          message={this.state.message}
-          handleMessage={this.handleMessage}
-        />
-        <input className="button" type="submit" value="Submit" />
-      </form>
+      <div id='main-form'>
+        <div id='first-part'>
+          <h3>Contact Information</h3>
+          <hr />
+          <p> Mackenson Dorancy<br /> Medford, MA <br /> 02155</p>
+          <hr />
+          <p><b>E:</b>mackensondorancy@yahoo.com <br /><b>P:</b>857-249-4847</p>
+
+        </div>
+        <form className="contact-form" onSubmit={this.handleFormSubmit}>
+          <Name
+            label="Name"
+            name={this.state.name}
+            handleName={this.handleName}
+          />
+          <Email
+            label="Email"
+            email={this.state.email}
+            handleEmail={this.handleEmail}
+          />
+          <Message
+            label="Message"
+            message={this.state.message}
+            handleMessage={this.handleMessage}
+          />
+          <input className="button" type="submit" value="Send Message" />
+        </form>
+      </div>
 
     )
   }

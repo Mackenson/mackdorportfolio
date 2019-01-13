@@ -1,12 +1,11 @@
 import React from 'react';
-
+import '../css/Input.css';
 const Email = (props) => {
   return (
-    <div className="form_field">
-      <label>
-        {props.label}
-      </label>
+    <div>
         <input
+          className="form_field"
+          placeholder={props.label}
           name={props.email}
           type='text'
           value={props.email}
