@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "mackdorportfolio": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm start client\""
+    "client": " cd client && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "keywords": [],
   "author": "",
@@ -18,5 +18,8 @@
     "express": "^4.16.4",
     "nodemailer": "^5.1.1",
     "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "ws": "3.3.2"
   }
 }

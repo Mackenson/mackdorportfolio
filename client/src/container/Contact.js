@@ -4,7 +4,7 @@ import Email from '../components/Email';
 import Message from '../components/Message';
 import Nav from './Nav'
 import '../css/Contact.css';
-import axios from 'axios'
+import axios from 'axios';
 
 
 class Contact extends Component {
@@ -47,7 +47,7 @@ async  handleFormSubmit(event) {
 
     const {name, email, message} = this.state
 
-    const form = await axios.post('/api/form',{
+    const form = await axios.post('/form',{
       name,
       email,
       message
