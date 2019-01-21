@@ -1,12 +1,7 @@
 {
   "name": "client",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "8.11.3",
-    "npm": "5.6.0",
-    "yarn": "1.5.1"
-  },
   "proxy": "http://localhost:3000",
   "dependencies": {
     "axios": "^0.18.0",
