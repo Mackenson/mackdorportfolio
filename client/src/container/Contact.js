@@ -64,7 +64,7 @@ async  handleFormSubmit(event) {
           <div id='first-part'>
             <h3>Contact Information</h3>
             <hr />
-            <p> Mackenson Dorancy<br /> Medford, MA <br /> 02155</p>
+          <p> Mackenson Dorancy<br /> Medford, MA <br /> 02155</p>
             <hr />
             <p><b>E:</b>mackensondorancy@yahoo.com <br /><b>P:</b>857-249-4847</p>
 
