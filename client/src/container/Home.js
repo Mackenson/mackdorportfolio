@@ -6,6 +6,7 @@ import '../css/Home.css';
 import Nav from "./Nav";
 import Header from "./Header";
 import Contact from "./Contact";
+import Project from "./Project";
 
 class Home extends Component {
   render() {
@@ -28,6 +29,7 @@ class Home extends Component {
             />
           </div>
       </header>
+      <Project />
       <Contact />
       </div>
     );
