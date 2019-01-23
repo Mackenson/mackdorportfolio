@@ -18,7 +18,7 @@ app.listen(app.get('port'), function() {
   console.log('server is running on port' +  app.get('port'));
 })
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
+	app.use(express.static('client'));
 }
 
 app.get('*', (request, response) => {
