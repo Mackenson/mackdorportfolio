@@ -19,7 +19,7 @@ class About extends Component {
           </div>
 
           <button>
-            <a className='resume' align='right' href='../pdf/ Dorancy_Resume.pdf' target='_blank'>resume</a>
+            <a className='resume' align='right' href='../pdf/dorancy-resume.html' target='_blank'>resume</a>
           </button>
 
         </header>

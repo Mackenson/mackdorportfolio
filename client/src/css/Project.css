@@ -1,6 +1,15 @@
 *{
   box-sizing: border-box;
 }
+#top-box{
+  text-align: center;
+  margin: 5rem auto;
+}
+
+a{
+  text-decoration: none;
+}
+
 #main-box{
   display: flex;
   margin: 3rem;

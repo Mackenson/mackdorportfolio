@@ -60,6 +60,7 @@ async  handleFormSubmit(event) {
 
           <Nav />
 
+          <h1 id='contact-h1'>Contact Me</h1>
         <div id='main-form'>
           <div id='first-part'>
             <h3>Contact Information</h3>
