@@ -12,6 +12,10 @@ app.post('/form', (req, res) =>{
   console.log(req.body);
 })
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
 app.set('port', (process.env.PORT || 5000));
 
 app.listen(app.get('port'), function() {
