@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "homepage" : "http://Mackenson.github.io/mackdorportfolio",
+    "homepage": "http://Mackenson.github.io/mackdorportfolio",
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": " cd client && npm start",
