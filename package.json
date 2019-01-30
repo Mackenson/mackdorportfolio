@@ -8,12 +8,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "homepage": "http://Mackenson.github.io/mackdorportfolio",
-    "start": "node index.js",
+    "begin": "node index.js",
     "server": "nodemon index.js",
-    "client": " cd client && npm start",
-    "heroku-postbuild": "cd client && npm install",
-    "dev": "concurrently --kill-others-on-fail  \"npm run client\""
+    "client": " npm start",
+    "dev": "concurrently --kill-others-on-fail  \"npm run start\""
   },
   "keywords": [],
   "author": "",
@@ -24,9 +27,23 @@
     "express": "^4.16.4",
     "nodemailer": "^5.1.1",
     "nodemon": "^1.18.9",
-    "require-path": "^0.3.0"
+    "require-path": "^0.3.0",
+    "axios": "^0.18.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router": "^3.2.1",
+    "react-scripts": "2.1.2"
   },
   "devDependencies": {
     "ws": "3.3.2"
-  }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
