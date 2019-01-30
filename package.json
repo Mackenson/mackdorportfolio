@@ -11,7 +11,7 @@
     "homepage": "http://Mackenson.github.io/mackdorportfolio",
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": " cd client && npm install && npm start",
+    "client": " cd client && npm start",
     "heroku-postbuild": "cd client && npm install",
     "dev": "concurrently --kill-others-on-fail  \"npm run client\""
   },
