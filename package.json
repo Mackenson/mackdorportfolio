@@ -13,7 +13,7 @@
     "server": "nodemon index.js",
     "client": " cd client && npm install && npm start",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "dev": "concurrently --kill-others-on-fail  \"npm run client\" \"npm run server\""
+    "dev": "concurrently --kill-others-on-fail  \"npm run client\""
   },
   "keywords": [],
   "author": "",
