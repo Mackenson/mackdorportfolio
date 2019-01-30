@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+import 'jquery-ui';
 import Nav from './Nav'
 import '../css/About.css';
 class About extends Component {
   render() {
+    $( "#main-title" ).click(function() {
+  alert( "Handler for .click() called." );
+});
     return (
       <div>
         <Nav />
@@ -17,11 +22,6 @@ class About extends Component {
               for front-end. I enjoy design and empliments new features.
             </p>
           </div>
-
-          <button>
-            <a className='resume' align='right' href='../pdf/dorancy-resume.html' target='_blank'>resume</a>
-          </button>
-
         </header>
       </div>
     );

@@ -23,10 +23,12 @@ class Project extends Component {
                 <img className='image' src={nature} alt='nature photo' />
               </div>
           </a>
-          <div className='first-box'>
-            <span className='h1'><h1>Etomon</h1></span>
-            <img className='image' src={see} alt='' />
-          </div>
+          <a href='https://www.etomon.com/' target="_blank">
+            <div className='first-box'>
+              <span className='h1'><h1>Etomon</h1></span>
+              <img className='image' src={see} alt='' />
+            </div>
+          </a>
           <div className='first-box'>
             <span className='h1'><h1>SeeUUP</h1></span>
             <img className='image' src={etomon} alt='' />
