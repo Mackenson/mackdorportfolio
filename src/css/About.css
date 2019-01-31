@@ -35,3 +35,43 @@ h4{
   margin: 0 auto;
   font-size: 1.3rem;
 }
+
+@keyframes fader {
+  0%{
+    background: url('../img/mack1.jpg');
+    background-size: cover;
+  }
+  33.3%{
+    background: url('../img/mack2.jpg');
+    background-size: cover;
+  }
+  66.3%{
+    background: url('../img/mack3.jpg');
+    background-size: cover;
+  }
+  100%{
+    background: url('../img/mack4.jpg');
+    background-size: cover;
+  }
+}
+#main-pictures{
+  width: 50rem;
+}
+
+.slides{
+  /* display: none; */
+  width: 95vw;
+  height: 100vh;
+  margin: 0 2.5%;
+  background-color: #000;
+}
+
+#about-pictures{
+  width: 100vw;
+  height: 100vh;
+  margin: 2.55rem auto;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .1),
+              -10px 8px 15px rgba(0, 0, 0, .1),
+              10px 8px 15px rgba(0, 0, 0, .1);
+  animation: fader 25s linear infinite;
+}
