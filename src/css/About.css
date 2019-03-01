@@ -75,3 +75,13 @@ h4{
               10px 8px 15px rgba(0, 0, 0, .1);
   animation: fader 25s linear infinite;
 }
+
+.img-about{
+  width: 45%;
+  height: 10%;
+  margin: 5% 2%;
+}
+
+.img-box{
+  display: flex;
+}

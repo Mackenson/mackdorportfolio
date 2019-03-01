@@ -24,6 +24,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
@@ -32,6 +33,7 @@
     "nodemailer": "^5.1.1",
     "nodemon": "^1.18.9",
     "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.7.0",
     "react-router": "^3.2.1",
     "react-scripts": "2.1.2",
