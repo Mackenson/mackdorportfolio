@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 import nature from "../img/nature.jpg"
 import see from "../img/seeuup.jpg"
 import etomon from "../img/etomon.jpg"
+import phood from "../img/phood.png"
 
 class Project extends Component {
   render() {
@@ -29,10 +30,14 @@ class Project extends Component {
               <img className='image' src={see} alt='' />
             </div>
           </a>
-          <div className='first-box'>
-            <span className='h1'><h1>SeeUUP</h1></span>
-            <img className='image' src={etomon} alt='' />
-          </div>
+          <a href='https://phoodsolutions.com/' target="_blank">
+            <div className='first-box'>
+              <span className='h1'><h1>Phood</h1></span>
+              <img className='image' src={phood} alt='' />
+            </div>
+          </a>
+
+
         </div>
       </div>
     );
