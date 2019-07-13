@@ -16,11 +16,12 @@
     "begin": "node index.js",
     "server": "nodemon index.js",
     "client": " npm start",
-    "dev": "concurrently --kill-others-on-fail  \"npm run start\""
+    "dev": "concurrently --kill-others-on-fail \"node index\" \"npm run start\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
