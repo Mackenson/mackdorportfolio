@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-var path = require('path');
+const path = require('path');
+const dotenv = require('dotenv')
 
+dotenv.config();
 const app = express();
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/public', express.static(path.join(__dirname, 'public')))
@@ -39,11 +40,11 @@ async function main(){
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: `"Fred Foo 👻" <${req.body.email}>`, // sender address
+    from: `"Portfolio 👻" <${req.body.email}>`, // sender address
     to: "rowan.torp@ethereal.email", // list of receivers
     subject: "New Message ✔", // Subject line
-    text: `<b>HEY</b>`, // plain text body
-    html: `<b>hello body</b>` // html body
+    text: `${req.body.message}`, // plain text body
+    html: `<b>${req.body.message}</b>` // html body
   });
 
   console.log("Message sent: %s", info.messageId);
