@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 class Nav extends Component {
   render() {
-    const navList = ["Home", "About", "Projects", "Contact"];
+    const navList = ["Home", "About", "Contact"];
     const list = navList.map((item)=>{
       return(
         <li><Link to={"/" + item}>{item}</Link></li>

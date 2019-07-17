@@ -16,6 +16,7 @@ header a{
   font-weight: 700;
   background-color: #1d809f;
   border-color: #1d809f;
+  cursor: pointer;
   color: #f2e9e9;
   padding: 1.25rem 2.5rem;
   text-decoration: none;

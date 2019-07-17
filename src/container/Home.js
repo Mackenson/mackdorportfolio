@@ -8,12 +8,23 @@ import Header from "./Header";
 import Contact from "./Contact";
 import Project from "./Project";
 
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll } from 'react-scroll'
+
+
+// const scroll     = Scroll.animateScroll;
 class Home extends Component {
+
+  scrollTo () {
+    scroll.scrollTo(1000);
+  }
+
   render() {
     return (
       <div>
         <Nav
           logoTitle="MD"
+          button = { this.scrollTo }
         />
         <header className="v-header container">
           <div className="v-fullSreen">
@@ -25,7 +36,7 @@ class Home extends Component {
           <div className="v-text">
             <Header
               title="Mackenson Dorancy Portfolio"
-              button="My Projects"
+              button = { this.scrollTo }
             />
           </div>
       </header>

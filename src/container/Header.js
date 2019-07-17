@@ -6,7 +6,7 @@ class Header extends Component {
       <div>
         <header>
           <h1 className="title">{this.props.title}</h1>
-          <a href="#project">{this.props.button}</a>
+          <a onClick={this.props.button}>Projects</a>
         </header>
       </div>
     );
