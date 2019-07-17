@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
 app.post('/api/contact', function(req, res){
-  console.log(req.body);
 
 // async..await is not allowed in global scope, must use a wrapper
 async function main(){
