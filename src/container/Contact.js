@@ -48,6 +48,14 @@ class Contact extends Component {
     const {name, email, message} = this.state
 
     const response = axios.post('/api/contact', { name, email, message });
+    if (response) {
+      this.setState({
+        name: '',
+        email: '',
+        message: ''
+      })
+      console.log('awesome');
+    }
 
   } catch (e) {
     console.log(e);

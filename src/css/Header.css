@@ -1,7 +1,7 @@
-header{
+#header-text{
   margin: 0 auto;
-  margin-bottom: 20rem;
-  margin-left: 15rem;
+  margin-bottom: 10rem;
+  margin-left: 25rem;
   text-align: center;
   padding-right: 30px;
 }
@@ -9,9 +9,10 @@ header{
 .title{
   font-size: 2rem;
   color: #f2e9e9;
+  margin-bottom: 2rem;
 }
 
-header a{
+#header-text a{
   box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
   font-weight: 700;
   background-color: #1d809f;

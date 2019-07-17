@@ -5,9 +5,39 @@ import nature from "../img/nature.jpg"
 import see from "../img/seeuup.jpg"
 import etomon from "../img/etomon.jpg"
 import phood from "../img/phood.png"
+import { Card, CardImg, CardBody, CardTitle } from 'reactstrap';
 
+const project = [
+       {
+        'link': 'https://damp-earth-88250.herokuapp.com/',
+        'name': 'Picasso',
+        'photo': nature
+      },
+      {
+        'link': 'https://www.etomon.com/',
+        'name': 'Etomon',
+        'photo': see
+    },
+     {
+      'link': 'https://phoodsolutions.com/',
+      'name': 'Phood',
+      'photo': phood
+    }
+]
 class Project extends Component {
   render() {
+    const getProject = project.map((item)=>{
+      return(
+        <a href={item.link} target="_blank">
+          <Card className='first-box'>
+            <CardBody>
+              <CardTitle>{item.name}</CardTitle>
+              <CardImg className="img-card" src={item.photo} alt="Card image cap" />
+            </CardBody>
+          </Card>
+      </a>
+      );
+    })
     return (
       <div>
         <div id='top-box'>
@@ -17,28 +47,7 @@ class Project extends Component {
               delivering cutting edge web technologies that suprise and inspire.
           </p>
         </div>
-          <div id='main-box'>
-            <a href='https://damp-earth-88250.herokuapp.com/' target="_blank">
-              <div className='first-box'>
-                <span className='h1'><h1>Picasso</h1></span>
-                <img className='image' src={nature} alt='nature photo' />
-              </div>
-          </a>
-          <a href='https://www.etomon.com/' target="_blank">
-            <div className='first-box'>
-              <span className='h1'><h1>Etomon</h1></span>
-              <img className='image' src={see} alt='' />
-            </div>
-          </a>
-          <a href='https://phoodsolutions.com/' target="_blank">
-            <div className='first-box'>
-              <span className='h1'><h1>Phood</h1></span>
-              <img className='image' src={phood} alt='' />
-            </div>
-          </a>
-
-
-        </div>
+          {getProject}
       </div>
     );
   }

@@ -16,7 +16,6 @@ class About extends Component {
         <Nav />
         <header>
           <h1 id="main-title">Makenson Dorancy</h1>
-          <h4>About Me</h4>
           <div id="text">
             <p>
               I am a junior full-stack web developer. As much as I like working in
