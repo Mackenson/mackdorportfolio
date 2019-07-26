@@ -23,7 +23,7 @@ class Home extends Component {
     return (
       <div>
         <Nav
-          logoTitle="MD"
+          logoTitle= 'MD'
           button = { this.scrollTo }
         />
         <header className="v-header container">
@@ -35,7 +35,7 @@ class Home extends Component {
           <div className="v-overlay"></div>
           <div className="v-text">
             <Header
-              title="Mackenson Dorancy Portfolio"
+              title="Mackenson Dorancy"
               button = { this.scrollTo }
             />
           </div>

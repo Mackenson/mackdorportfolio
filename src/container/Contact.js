@@ -15,7 +15,7 @@ class Contact extends Component {
       email: '',
       message: ''
     }
-    this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handleMessage = this.handleMessage.bind(this);
