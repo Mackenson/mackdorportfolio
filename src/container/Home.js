@@ -16,7 +16,7 @@ import { Link, Element , Events, animateScroll as scroll } from 'react-scroll'
 class Home extends Component {
 
   scrollTo () {
-    scroll.scrollTo(1000);
+    scroll.scrollTo(900);
   }
 
   render() {
