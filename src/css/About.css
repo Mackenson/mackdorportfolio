@@ -8,6 +8,7 @@ body{
 
 #main-title{
   padding-top: 7rem;
+  text-align: center;
   font-size: 2.5rem;
   color: gray;
 }
@@ -31,7 +32,38 @@ h4{
 }
 
 #text{
-  width: 50%;
   margin: 0 auto;
   font-size: 1.3rem;
+}
+
+#main-pictures{
+  width: 50rem;
+}
+
+.slides{
+  /* display: none; */
+  width: 95vw;
+  height: 100vh;
+  margin: 0 2.5%;
+  background-color: #000;
+}
+
+#about-pictures{
+  width: 100vw;
+  height: 100vh;
+  margin: 2.55rem auto;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .1),
+              -10px 8px 15px rgba(0, 0, 0, .1),
+              10px 8px 15px rgba(0, 0, 0, .1);
+  animation: fader 25s linear infinite;
+}
+
+.img-about{
+  width: 45%;
+  height: 10%;
+  margin: 5% 2%;
+}
+
+.img-box{
+  display: flex;
 }

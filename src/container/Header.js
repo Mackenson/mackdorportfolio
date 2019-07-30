@@ -3,11 +3,9 @@ import '../css/Header.css';
 class Header extends Component {
   render() {
     return (
-      <div>
-        <header>
+      <div id='header-text'>
           <h1 className="title">{this.props.title}</h1>
-          <a href="#project">{this.props.button}</a>
-        </header>
+          <a onClick={this.props.button}>Projects</a>
       </div>
     );
   }

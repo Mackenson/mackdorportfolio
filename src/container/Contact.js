@@ -4,7 +4,7 @@ import Email from '../components/Email';
 import Message from '../components/Message';
 import Nav from './Nav'
 import '../css/Contact.css';
-import axios from 'axios';
+import axios from 'axios'
 
 
 class Contact extends Component {
@@ -15,7 +15,7 @@ class Contact extends Component {
       email: '',
       message: ''
     }
-    this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handleMessage = this.handleMessage.bind(this);
@@ -36,39 +36,44 @@ class Contact extends Component {
       this.setState({ message: newMessage })
   }
 
-
-async  handleFormSubmit(event) {
-    event.preventDefault()
+  async handleFormSubmit (e){
+    e.preventDefault()
+  try {
     let formPayload = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message
+      'name': this.state.name,
+      'email': this.state.email,
+      'message': this.state.message
     }
 
     const {name, email, message} = this.state
 
-    const form = await axios.post('/form',{
-      name,
-      email,
-      message
-    })
+    const response = axios.post('/api/contact', { name, email, message });
+    if (response) {
+      this.setState({
+        name: '',
+        email: '',
+        message: ''
+      })
+      console.log('awesome');
+    }
+
+  } catch (e) {
+    console.log(e);
   }
+}
 
   render() {
     return(
       <div>
-
-          <Nav />
-
-          <h1 id='contact-h1'>Contact Me</h1>
+        <Nav />
+        <h1 id='contact-h1'>Contact Me</h1>
         <div id='main-form'>
           <div id='first-part'>
             <h3>Contact Information</h3>
             <hr />
           <p> Mackenson Dorancy<br /> Medford, MA <br /> 02155</p>
             <hr />
-            <p><b>E:</b>mackensondorancy@yahoo.com <br /><b>P:</b>857-249-4847</p>
-
+          <p><b>E:</b>mackensondorancy@yahoo.com <br /><b>P:</b>857-249-4847</p>
           </div>
           <form className="contact-form" onSubmit={this.handleFormSubmit}>
             <Name
